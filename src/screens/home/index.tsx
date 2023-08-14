@@ -38,6 +38,7 @@ import {
 	TopThirdContent,
 } from "./styles";
 import { Button } from "../../componets/button";
+import { Footer } from "../../componets/footer";
 
 export function Home() {
 	return (
@@ -46,7 +47,9 @@ export function Home() {
 				<Navbar />
 				<FirstContent>
 					<LeftSidefirstContent>
-						<h1>Sou, Donavan </h1>
+						<h1>
+							<span>Sou,</span> Donavan
+						</h1>
 						<p className="p3">
 							A front-end engineer and UI/UX designer helping startups turn their
 							visions into a digital reality. I specialize in designing and building
@@ -121,6 +124,7 @@ export function Home() {
 					</MidSixtContent>
 					<BottomSixtContent></BottomSixtContent>
 				</SixtContent>
+				<Footer />
 			</Body>
 		</>
 	);

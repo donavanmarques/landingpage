@@ -23,6 +23,10 @@ export const LeftSidefirstContent = styled.div`
 	flex-direction: column;
 	max-width: 700px;
 	gap: 40px;
+
+	span {
+		color: #808080;
+	}
 `;
 
 export const RightSidefirstContent = styled.div``;
