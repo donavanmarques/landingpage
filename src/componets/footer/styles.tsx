@@ -53,11 +53,42 @@ export const GradientBottom = styled.div`
 `;
 
 export const ContainerFooter = styled.div`
+	position: relative;
 	padding-top: 80px;
 	border-top: 2px solid #1817171d;
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
+`;
+
+export const ContentFooter = styled.div`
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 240px;
+	padding-right: 240px;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+`;
+
+export const LeftSide = styled.div``;
+
+export const RightSide = styled.div`
+	display: flex;
+	gap: 120px;
+`;
+
+export const Links = styled.div`
+	display: flex;
+	gap: 16px;
+	flex-direction: column;
+
+	.p2:hover {
+		cursor: pointer;
+		opacity: 0.7;
+		transition: 0.25s;
+	}
 `;

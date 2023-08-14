@@ -128,6 +128,10 @@ export const LeftSideFifthContent = styled.div`
 	display: flex;
 	flex-direction: column;
 	max-width: 600px;
+
+	.p3 {
+		margin-bottom: 40px;
+	}
 `;
 
 export const RightSideFifthContent = styled.div``;

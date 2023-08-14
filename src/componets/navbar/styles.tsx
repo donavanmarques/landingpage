@@ -12,7 +12,7 @@ export const GradientDiv = styled.div`
 		rgba(248, 248, 248, 2),
 		rgba(63, 100, 233, 0.596),
 		rgba(233, 63, 63, 0.548),
-		rgba(255, 183, 0, 0.192),
+		rgba(255, 183, 0, 0.342),
 		rgba(255, 255, 255, 2),
 		#ffffff
 	);
@@ -55,21 +55,66 @@ export const GradientBottom = styled.div`
 `;
 
 export const ContainerNav = styled.div`
+	top: 40px;
 	border: 1px solid #ffffff2b;
 	position: absolute;
 	display: flex;
-	gap: 40px;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	height: 60px;
-	width: 70%;
+	width: 60%;
 	background-color: #ffffff34;
 	border-radius: 12px;
-	top: 40px;
+
+	.rotate-center {
+		-webkit-animation: rotate-center 0.6s ease-in-out both;
+		animation: rotate-center 0.6s ease-in-out both;
+	}
+
+	@-webkit-keyframes rotate-center {
+		0% {
+			-webkit-transform: rotate(0);
+			transform: rotate(0);
+		}
+		100% {
+			-webkit-transform: rotate(360deg);
+			transform: rotate(360deg);
+		}
+	}
+	@keyframes rotate-center {
+		0% {
+			-webkit-transform: rotate(0);
+			transform: rotate(0);
+		}
+		100% {
+			-webkit-transform: rotate(360deg);
+			transform: rotate(360deg);
+		}
+	}
+`;
+
+export const LeftSide = styled.div`
+	padding: 16px 17px;
+	display: flex;
+	align-items: center;
+	gap: 30px;
 
 	.p2:hover {
 		cursor: pointer;
-		color: #ffffffa2;
-		transition: 0.3s;
+		opacity: 0.7;
+		transition: 0.25s;
+	}
+`;
+
+export const RightSide = styled.div`
+	display: flex;
+	align-items: center;
+	padding: 16px 17px;
+	gap: 30px;
+
+	.icon:hover {
+		cursor: pointer;
+		opacity: 0.7;
+		transition: 0.25s;
 	}
 `;

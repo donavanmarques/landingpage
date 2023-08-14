@@ -50,6 +50,24 @@ export default createGlobalStyle`
   .p3 {
     color: #808080;
     font-size: 24px;
+  } 
+
+  .t1 {
+    font-size: 16px;
+    color: #000;
+    font-weight: 800
+  } 
+
+  .t2 {
+    font-size: 18px;
+    color: #000;
+    font-weight: 600
+  }
+
+  .t3 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 800
   }
 
 

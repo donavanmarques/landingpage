@@ -1,5 +1,6 @@
 import { Navbar } from "../../componets/navbar";
 import FirstPic from "../../assets/first-image.svg";
+import SecondPic from "../../assets/second-image.svg";
 import JavaScript from "../../assets/javascript.svg";
 import TypeScript from "../../assets/typescript.svg";
 import Mongo from "../../assets/mongodb.svg";
@@ -107,9 +108,10 @@ export function Home() {
 							Deseja discutir a oportunidade de desenvolver algo legal? Eu estou pronto
 							quando você estiver.
 						</p>
+						<Button color="#1A1A1A" text="Entrar em contato" textColor="#ffff" />
 					</LeftSideFifthContent>
 					<RightSideFifthContent>
-						<Button color="#1A1A1A" text="Entrar em contato" textColor="#ffff" />
+						<img src={SecondPic} alt="" />
 					</RightSideFifthContent>
 				</FifthContent>
 				<SixtContent>
