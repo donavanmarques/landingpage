@@ -1,11 +1,18 @@
-import { GradientBottom, GradientDiv, GradientDivMid } from "./styles";
+import {
+	ContainerFooter,
+	GradientBottom,
+	GradientDiv,
+	GradientDivMid,
+} from "./styles";
 
 export function Footer() {
 	return (
 		<>
-			<GradientBottom />
-			<GradientDivMid />
-			<GradientDiv />
+			<ContainerFooter>
+				<GradientBottom />
+				<GradientDivMid />
+				<GradientDiv />
+			</ContainerFooter>
 		</>
 	);
 }

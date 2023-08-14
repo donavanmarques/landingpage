@@ -13,7 +13,7 @@ export const GradientDiv = styled.div`
 		rgba(236, 181, 41, 0.247),
 		rgba(233, 63, 63, 0.548),
 		rgba(108, 134, 230, 0.514),
-		rgba(63, 100, 233, 0.596),
+		rgba(63, 100, 233, 0.247),
 		#ffffff
 	);
 `;
@@ -31,7 +31,7 @@ export const GradientDivMid = styled.div`
 		rgba(236, 181, 41, 0.247),
 		rgba(233, 63, 63, 0.548),
 		rgba(108, 134, 230, 0.514),
-		rgba(63, 100, 233, 0.596),
+		rgba(63, 100, 233, 0.363),
 		#ffffff
 	);
 `;
@@ -47,27 +47,17 @@ export const GradientBottom = styled.div`
 		#ffffff,
 		rgba(255, 183, 0, 0.192),
 		rgba(233, 63, 63, 0.548),
-		rgba(63, 100, 233, 0.596),
+		rgba(63, 100, 233, 0.699),
 		#ffffff
 	);
 `;
 
 export const ContainerFooter = styled.div`
-	border: 1px solid #ffffff2b;
-	position: absolute;
+	padding-top: 80px;
+	border-top: 2px solid #1817171d;
 	display: flex;
-	gap: 40px;
 	justify-content: center;
 	align-items: center;
-	height: 60px;
-	width: 70%;
-	background-color: #ffffff34;
-	border-radius: 12px;
-	top: 40px;
-
-	.p2:hover {
-		cursor: pointer;
-		color: #ffffffa2;
-		transition: 0.3s;
-	}
+	flex-direction: column;
+	width: 100%;
 `;
