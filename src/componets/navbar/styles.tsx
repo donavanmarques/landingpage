@@ -56,10 +56,17 @@ export const GradientBottom = styled.div`
 
 export const ContainerNav = styled.div`
 	position: absolute;
+	display: flex;
+	gap: 40px;
+	justify-content: center;
+	align-items: center;
 	height: 60px;
 	width: 70%;
-	background-color: #ffff;
-	opacity: 28%;
+	background-color: #ffffff34;
 	border-radius: 12px;
 	top: 40px;
+
+	p {
+		cursor: pointer;
+	}
 `;

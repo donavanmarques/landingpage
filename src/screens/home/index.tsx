@@ -9,22 +9,32 @@ import Styled from "../../assets/styled.svg";
 import Jest from "../../assets/jest.svg";
 import Postgres from "../../assets/postgrest.svg";
 import Docker from "../../assets/docker.svg";
+import Gmail from "../../assets/gmail.svg";
+import Linkedin from "../../assets/linkedin.svg";
+import Github from "../../assets/github.svg";
 
 import {
 	AboutBar,
 	AboutText,
 	Body,
+	BottomSixtContent,
 	BottomThirdContent,
 	CardProject,
+	FifthContent,
 	FirstContent,
 	FourthContent,
 	FourthContentTop,
+	LeftSideFifthContent,
 	LeftSidefirstContent,
+	MidSixtContent,
 	Projects,
+	RightSideFifthContent,
 	RightSidefirstContent,
 	SecondContent,
+	SixtContent,
 	SkillsCard,
 	ThirdContent,
+	TopSixtContent,
 	TopThirdContent,
 } from "./styles";
 import { Button } from "../../componets/button";
@@ -61,7 +71,7 @@ export function Home() {
 				</SecondContent>
 				<ThirdContent>
 					<TopThirdContent>
-						<p className="p3">Projetos</p>
+						<h4>Projetos</h4>
 					</TopThirdContent>
 					<Projects>
 						<CardProject></CardProject>
@@ -73,7 +83,7 @@ export function Home() {
 				</ThirdContent>
 				<FourthContent>
 					<FourthContentTop>
-						<p className="p3">Skills</p>
+						<h4>Skills</h4>
 					</FourthContentTop>
 					<SkillsCard>
 						<img src={JavaScript} alt="" />
@@ -87,6 +97,30 @@ export function Home() {
 						<img src={Styled} alt="" />
 					</SkillsCard>
 				</FourthContent>
+				<FifthContent>
+					<LeftSideFifthContent>
+						<h2>Vamos trabalhar juntos</h2>
+						<p className="p3">
+							Deseja discutir a oportunidade de desenvolver algo legal? Eu estou pronto
+							quando você estiver.
+						</p>
+					</LeftSideFifthContent>
+					<RightSideFifthContent>
+						<Button color="#1A1A1A" text="Entrar em contato" textColor="#ffff" />
+					</RightSideFifthContent>
+				</FifthContent>
+				<SixtContent>
+					<TopSixtContent>
+						<img src={Gmail} alt="" />
+						<img src={Linkedin} alt="" />
+						<img src={Github} alt="" />
+					</TopSixtContent>
+					<MidSixtContent>
+						<p className="p2">Projetos</p>
+						<p className="p2">Contato</p>
+					</MidSixtContent>
+					<BottomSixtContent></BottomSixtContent>
+				</SixtContent>
 			</Body>
 		</>
 	);

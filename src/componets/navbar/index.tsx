@@ -11,7 +11,13 @@ export function Navbar() {
 			<GradientDiv />
 			<GradientDivMid />
 			<GradientBottom />
-			<ContainerNav></ContainerNav>
+			<ContainerNav>
+				<p className="p2">Home</p>
+				<p className="p2">Projetos</p>
+				<p className="p2">Artigos</p>
+				<p className="p2">Contato</p>
+				<p className="p2">Mais</p>
+			</ContainerNav>
 		</>
 	);
 }

@@ -12,8 +12,8 @@ export const Body = styled.div`
 export const FirstContent = styled.div`
 	display: flex;
 	justify-content: space-between;
-	padding-left: 220px;
-	padding-right: 220px;
+	padding-left: 240px;
+	padding-right: 240px;
 
 	width: 100%;
 `;
@@ -28,8 +28,8 @@ export const LeftSidefirstContent = styled.div`
 export const RightSidefirstContent = styled.div``;
 
 export const SecondContent = styled.div`
-	padding-left: 220px;
-	padding-right: 220px;
+	padding-left: 240px;
+	padding-right: 240px;
 	margin-top: 80px;
 	margin-bottom: 80px;
 	min-height: 120px;
@@ -55,8 +55,8 @@ export const ThirdContent = styled.div`
 	width: 100%;
 	flex-direction: column;
 	gap: 40px;
-	padding-left: 220px;
-	padding-right: 220px;
+	padding-left: 240px;
+	padding-right: 240px;
 	margin-bottom: 120px;
 `;
 
@@ -91,8 +91,8 @@ export const FourthContent = styled.div`
 	display: flex;
 	width: 100%;
 	flex-direction: column;
-	padding-left: 220px;
-	padding-right: 220px;
+	padding-left: 240px;
+	padding-right: 240px;
 	margin-bottom: 120px;
 `;
 
@@ -109,3 +109,49 @@ export const SkillsCard = styled.div`
 	flex-wrap: wrap;
 	gap: 120px;
 `;
+
+export const FifthContent = styled.div`
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding-left: 240px;
+	padding-right: 240px;
+	margin-bottom: 120px;
+`;
+
+export const LeftSideFifthContent = styled.div`
+	display: flex;
+	flex-direction: column;
+	max-width: 600px;
+`;
+
+export const RightSideFifthContent = styled.div``;
+
+export const SixtContent = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-left: 240px;
+	padding-right: 240px;
+	margin-bottom: 120px;
+`;
+
+export const TopSixtContent = styled.div`
+	display: flex;
+
+	gap: 72px;
+
+	img {
+		cursor: pointer;
+	}
+`;
+
+export const MidSixtContent = styled.div`
+	display: flex;
+	margin-top: 42px;
+	gap: 48px;
+`;
+
+export const BottomSixtContent = styled.div``;

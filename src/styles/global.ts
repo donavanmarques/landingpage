@@ -19,9 +19,20 @@ export default createGlobalStyle`
     text-decoration: none;
   } 
 
+
+
   h1 {
     font-size: 80px;
     font-weight: 800
+  }
+
+  h2 {
+    font-size: 42px;
+    font-weight: 800
+  }
+
+  h4 {
+    font-size: 26px;
   }
 
   .p0 {
@@ -37,6 +48,7 @@ export default createGlobalStyle`
   }
 
   .p3 {
+    color: #808080;
     font-size: 24px;
   }
 
