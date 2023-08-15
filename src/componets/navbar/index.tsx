@@ -21,7 +21,7 @@ export function Navbar() {
 			<GradientBottom />
 			<ContainerNav>
 				<LeftSide>
-					<img className="rotate-center" src={Logo} alt="" />
+					<img className="bounce-top" src={Logo} alt="" />
 					<p className="p2">Home</p>
 					<p className="p2">Projetos</p>
 					<p className="p2">Artigos</p>

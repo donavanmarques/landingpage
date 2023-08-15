@@ -74,13 +74,23 @@ export const BottomThirdContent = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-top: 40px;
 `;
 
 export const Projects = styled.div`
 	display: flex;
+	transform: scale(1.05);
 	justify-content: center;
 	width: 100%;
 	gap: 40px;
+	transition: ease-in-out 0.3s;
+	transform: scale(1.05);
+
+	.card:hover {
+		cursor: pointer;
+		transition: ease-in-out 0.3s;
+		transform: scale(1.05);
+	}
 `;
 
 export const CardProject = styled.div`
@@ -112,6 +122,86 @@ export const SkillsCard = styled.div`
 	justify-content: center;
 	flex-wrap: wrap;
 	gap: 120px;
+
+	.vibrate-1:hover {
+		cursor: pointer;
+		-webkit-animation: vibrate-1 0.3s linear infinite both;
+		animation: vibrate-1 0.3s linear infinite both;
+	}
+
+	@-webkit-keyframes vibrate-1 {
+		0% {
+			-webkit-transform: translate(0);
+			transform: translate(0);
+		}
+		20% {
+			-webkit-transform: translate(-2px, 2px);
+			transform: translate(-2px, 2px);
+		}
+		40% {
+			-webkit-transform: translate(-2px, -2px);
+			transform: translate(-2px, -2px);
+		}
+		60% {
+			-webkit-transform: translate(2px, 2px);
+			transform: translate(2px, 2px);
+		}
+		80% {
+			-webkit-transform: translate(2px, -2px);
+			transform: translate(2px, -2px);
+		}
+		100% {
+			-webkit-transform: translate(0);
+			transform: translate(0);
+		}
+	}
+	@keyframes vibrate-1 {
+		0% {
+			-webkit-transform: translate(0);
+			transform: translate(0);
+		}
+		20% {
+			-webkit-transform: translate(-2px, 2px);
+			transform: translate(-2px, 2px);
+		}
+		40% {
+			-webkit-transform: translate(-2px, -2px);
+			transform: translate(-2px, -2px);
+		}
+		60% {
+			-webkit-transform: translate(2px, 2px);
+			transform: translate(2px, 2px);
+		}
+		80% {
+			-webkit-transform: translate(2px, -2px);
+			transform: translate(2px, -2px);
+		}
+		100% {
+			-webkit-transform: translate(0);
+			transform: translate(0);
+		}
+	}
+
+	@-webkit-keyframes flip-vertical-right {
+		0% {
+			-webkit-transform: rotateY(0);
+			transform: rotateY(0);
+		}
+		100% {
+			-webkit-transform: rotateY(180deg);
+			transform: rotateY(180deg);
+		}
+	}
+	@keyframes flip-vertical-right {
+		0% {
+			-webkit-transform: rotateY(0);
+			transform: rotateY(0);
+		}
+		100% {
+			-webkit-transform: rotateY(180deg);
+			transform: rotateY(180deg);
+		}
+	}
 `;
 
 export const FifthContent = styled.div`

@@ -66,29 +66,113 @@ export const ContainerNav = styled.div`
 	background-color: #ffffff34;
 	border-radius: 12px;
 
-	.rotate-center {
-		-webkit-animation: rotate-center 0.6s ease-in-out both;
-		animation: rotate-center 0.6s ease-in-out both;
+	.bounce-top {
+		-webkit-animation: bounce-top 0.9s both;
+		animation: bounce-top 0.9s both;
 	}
 
-	@-webkit-keyframes rotate-center {
+	@-webkit-keyframes bounce-top {
 		0% {
-			-webkit-transform: rotate(0);
-			transform: rotate(0);
+			-webkit-transform: translateY(-45px);
+			transform: translateY(-45px);
+			-webkit-animation-timing-function: ease-in;
+			animation-timing-function: ease-in;
+			opacity: 1;
+		}
+		24% {
+			opacity: 1;
+		}
+		40% {
+			-webkit-transform: translateY(-24px);
+			transform: translateY(-24px);
+			-webkit-animation-timing-function: ease-in;
+			animation-timing-function: ease-in;
+		}
+		65% {
+			-webkit-transform: translateY(-12px);
+			transform: translateY(-12px);
+			-webkit-animation-timing-function: ease-in;
+			animation-timing-function: ease-in;
+		}
+		82% {
+			-webkit-transform: translateY(-6px);
+			transform: translateY(-6px);
+			-webkit-animation-timing-function: ease-in;
+			animation-timing-function: ease-in;
+		}
+		93% {
+			-webkit-transform: translateY(-4px);
+			transform: translateY(-4px);
+			-webkit-animation-timing-function: ease-in;
+			animation-timing-function: ease-in;
+		}
+		25%,
+		55%,
+		75%,
+		87% {
+			-webkit-transform: translateY(0px);
+			transform: translateY(0px);
+			-webkit-animation-timing-function: ease-out;
+			animation-timing-function: ease-out;
 		}
 		100% {
-			-webkit-transform: rotate(360deg);
-			transform: rotate(360deg);
+			-webkit-transform: translateY(0px);
+			transform: translateY(0px);
+			-webkit-animation-timing-function: ease-out;
+			animation-timing-function: ease-out;
+			opacity: 1;
 		}
 	}
-	@keyframes rotate-center {
+	@keyframes bounce-top {
 		0% {
-			-webkit-transform: rotate(0);
-			transform: rotate(0);
+			-webkit-transform: translateY(-45px);
+			transform: translateY(-45px);
+			-webkit-animation-timing-function: ease-in;
+			animation-timing-function: ease-in;
+			opacity: 1;
+		}
+		24% {
+			opacity: 1;
+		}
+		40% {
+			-webkit-transform: translateY(-24px);
+			transform: translateY(-24px);
+			-webkit-animation-timing-function: ease-in;
+			animation-timing-function: ease-in;
+		}
+		65% {
+			-webkit-transform: translateY(-12px);
+			transform: translateY(-12px);
+			-webkit-animation-timing-function: ease-in;
+			animation-timing-function: ease-in;
+		}
+		82% {
+			-webkit-transform: translateY(-6px);
+			transform: translateY(-6px);
+			-webkit-animation-timing-function: ease-in;
+			animation-timing-function: ease-in;
+		}
+		93% {
+			-webkit-transform: translateY(-4px);
+			transform: translateY(-4px);
+			-webkit-animation-timing-function: ease-in;
+			animation-timing-function: ease-in;
+		}
+		25%,
+		55%,
+		75%,
+		87% {
+			-webkit-transform: translateY(0px);
+			transform: translateY(0px);
+			-webkit-animation-timing-function: ease-out;
+			animation-timing-function: ease-out;
 		}
 		100% {
-			-webkit-transform: rotate(360deg);
-			transform: rotate(360deg);
+			-webkit-transform: translateY(0px);
+			transform: translateY(0px);
+			-webkit-animation-timing-function: ease-out;
+			animation-timing-function: ease-out;
+			opacity: 1;
 		}
 	}
 `;
