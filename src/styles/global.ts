@@ -55,13 +55,13 @@ export default createGlobalStyle`
   .t1 {
     font-size: 16px;
     color: #000;
-    font-weight: 800
+    font-weight: 600
   } 
 
   .t2 {
     font-size: 18px;
     color: #000;
-    font-weight: 600
+    font-weight: 500
   }
 
   .t3 {
