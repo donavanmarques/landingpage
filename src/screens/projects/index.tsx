@@ -2,13 +2,13 @@ import { Footer } from "../../componets/footer";
 import { Navbar } from "../../componets/navbar";
 import { Body, Container } from "./styles";
 
-export function Notes() {
+export function Projects() {
   return (
     <>
       <Container>
         <Navbar />
         <Body>
-          <h1>Artigos</h1>
+          <h1>Projetos</h1>
         </Body>
         <Footer />
       </Container>

@@ -3,10 +3,9 @@ import Logo from "../../assets/logo.svg";
 import Linkedin from "../../assets/LinkedIn-icon.svg";
 import Github from "../../assets/Github-icon.svg";
 import Divider from "../../assets/divider.svg";
-// import Theme from "../../assets/theme.svg";
 
 import {
-  ContainerNav,
+  ContentNav,
   GradientBottom,
   GradientDiv,
   GradientDivMid,
@@ -21,7 +20,7 @@ export function Navbar() {
       <GradientDiv />
       <GradientDivMid />
       <GradientBottom />
-      <ContainerNav>
+      <ContentNav>
         <LeftSide>
           <img className="bounce-top" src={Logo} alt="" />
           <p
@@ -32,8 +31,22 @@ export function Navbar() {
           >
             Home
           </p>
-          <p className="p2">Projetos</p>
-          <p className="p2">Artigos</p>
+          <p
+            className="p2"
+            onClick={() => {
+              navigate("/projects");
+            }}
+          >
+            Projetos
+          </p>
+          <p
+            className="p2"
+            onClick={() => {
+              navigate("/notes");
+            }}
+          >
+            Artigos
+          </p>
           <p
             className="p2"
             onClick={() => {
@@ -42,7 +55,6 @@ export function Navbar() {
           >
             Contato
           </p>
-          <p className="p2">Mais</p>
         </LeftSide>
         <RightSide>
           <img className="icon" src={Linkedin} alt="" />
@@ -50,7 +62,7 @@ export function Navbar() {
           <img className="icon" src={Github} alt="" />
           {/* <img className="icon" src={Theme} alt="" /> */}
         </RightSide>
-      </ContainerNav>
+      </ContentNav>
     </>
   );
 }
