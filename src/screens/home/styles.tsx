@@ -1,20 +1,26 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+`;
+
 export const Body = styled.div`
+	padding-left: 240px;
+	padding-right: 240px;
 	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
-	min-height: 100vh;
+	max-width: 1900px;
 `;
 
 export const FirstContent = styled.div`
 	display: flex;
 	justify-content: space-between;
-	padding-left: 240px;
-	padding-right: 240px;
-
 	width: 100%;
 `;
 
@@ -79,7 +85,6 @@ export const BottomThirdContent = styled.div`
 
 export const Projects = styled.div`
 	display: flex;
-	transform: scale(1.05);
 	justify-content: center;
 	width: 100%;
 	gap: 40px;
