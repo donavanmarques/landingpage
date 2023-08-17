@@ -53,21 +53,22 @@ export default createGlobalStyle`
   } 
 
   .t1 {
-    font-size: 16px;
+    letter-spacing: 1.2px;
+    font-size: 10px;
     color: #000;
-    font-weight: 600
+    font-weight: 200
   } 
 
   .t2 {
     font-size: 18px;
     color: #000;
-    font-weight: 500
+    font-weight: 600
   }
 
   .t3 {
     color: #000;
     font-size: 24px;
-    font-weight: 800
+    font-weight: 600
   }
 
 
