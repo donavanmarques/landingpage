@@ -45,6 +45,7 @@ export default createGlobalStyle`
 
   .p2 {
     font-size: 18px;
+    
   }
 
   .p3 {

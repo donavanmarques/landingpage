@@ -47,6 +47,12 @@ export const SecondContent = styled.div`
 	justify-content: center;
 	width: 100%;
 
+	.jello-horizontal:hover {
+		cursor: pointer;
+		opacity: 0.7;
+		transition: 0.25s;
+	}
+
 	.jello-horizontal {
 		-webkit-animation: jello-horizontal 1.2s linear 1s 2 both;
 		animation: jello-horizontal 1.2s linear 1s 2 both;
@@ -123,6 +129,7 @@ export const AboutBar = styled.div`
 
 export const AboutText = styled.div`
 	max-width: 840px;
+	color: #808080;
 `;
 
 export const ThirdContent = styled.div`

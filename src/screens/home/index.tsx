@@ -60,9 +60,10 @@ export function Home() {
 								<span>Sou</span> Donavan,
 							</h1>
 							<p className="p3">
-								A front-end engineer and UI/UX designer helping startups turn their
-								visions into a digital reality. I specialize in designing and building
-								modern mobile and web-based apps.
+								tenho 25 anos e sou formado em análise e desenvolvimento de sistemas.
+								Possuo dois anos de experiência direta com a área de desenvolvimento de
+								softwares, sendo o primeiro ano como desenvolvedor, e o segundo como
+								analista de requisitos.
 							</p>
 
 							<Button
@@ -82,10 +83,12 @@ export function Home() {
 						<img className="jello-horizontal" src={Pdf} alt="" />
 						<AboutBar />
 						<AboutText>
-							<p className="p3">
-								A front-end engineer and UI/UX designer helping startups turn their
-								visions into a digital reality. I specialize in designing and building
-								modern mobile and web-based apps.
+							<p className="p2">
+								Embora desempenhe atualmente o papel de Analista, não pretendo me
+								distanciar do código. Meus objetivos profissionais direcionam-se à busca
+								de especialização na área de análise de sistemas, ao mesmo tempo em que
+								almejo desenvolver uma base sólida de experiência no desenvolvimento de
+								software.
 							</p>
 						</AboutText>
 					</SecondContent>
@@ -96,6 +99,52 @@ export function Home() {
 					</TopThirdContent>
 					<Projects>
 						<Fade>
+							<CardProject className="card">
+								<TopCardProject></TopCardProject>
+								<BottomCardProject>
+									<p className="t2">BANANA HUB</p>
+									<ContainerTag>
+										<Tag>
+											<p className="t1">JAVASCRIPT</p>
+										</Tag>
+										<Tag>
+											<p className="t1">JAVASCRIPT</p>
+										</Tag>
+										<Tag>
+											<p className="t1">JAVASCRIPT</p>
+										</Tag>
+									</ContainerTag>
+									<p className="p1">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+										provident reiciendis, quia ipsa iure qui magnam labore voluptates.
+										Commodi voluptatibus eius nihil hic molestiae velit esse odit harum
+										rem fugit!
+									</p>
+								</BottomCardProject>
+							</CardProject>
+							<CardProject className="card">
+								<TopCardProject></TopCardProject>
+								<BottomCardProject>
+									<p className="t2">BANANA HUB</p>
+									<ContainerTag>
+										<Tag>
+											<p className="t1">JAVASCRIPT</p>
+										</Tag>
+										<Tag>
+											<p className="t1">JAVASCRIPT</p>
+										</Tag>
+										<Tag>
+											<p className="t1">JAVASCRIPT</p>
+										</Tag>
+									</ContainerTag>
+									<p className="p1">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
+										provident reiciendis, quia ipsa iure qui magnam labore voluptates.
+										Commodi voluptatibus eius nihil hic molestiae velit esse odit harum
+										rem fugit!
+									</p>
+								</BottomCardProject>
+							</CardProject>
 							<CardProject className="card">
 								<TopCardProject></TopCardProject>
 								<BottomCardProject>

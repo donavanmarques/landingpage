@@ -37,19 +37,19 @@ export function Contact() {
 					<CardEmail>
 						<Fade>
 							<CardTitle>
-								<p className="t1">Novo e-mail</p>
+								<p className="t2">Novo e-mail</p>
 							</CardTitle>
 							<CardContent>
 								<CardRow>
-									<p className="t1">E-mail:</p>
+									<p className="t2">E-mail:</p>
 									<p className="p1">Insira seu endereço de e-mail</p>
 								</CardRow>
 								<CardRow>
-									<p className="t1">Nome:</p>
+									<p className="t2">Nome:</p>
 									<p className="p1">Insira seu nome</p>
 								</CardRow>
 								<CardRow>
-									<p className="t1">Assunto</p>
+									<p className="t2">Assunto:</p>
 									<p className="p1">Informe o assunto</p>
 								</CardRow>
 								<MessageBox placeholder="Escreva sua mensagem aqui" />
