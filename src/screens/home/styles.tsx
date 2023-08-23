@@ -123,7 +123,7 @@ export const SecondContent = styled.div`
 export const AboutBar = styled.div`
 	width: 4px;
 	border-radius: 2px;
-	height: 100px;
+	height: 80px;
 	background-color: #e93f3f;
 `;
 
@@ -170,47 +170,6 @@ export const Projects = styled.div`
 		cursor: pointer;
 		transition: ease-in-out 0.2s;
 		transform: scale(1.02);
-	}
-`;
-
-export const CardProject = styled.div`
-	width: 422px;
-	height: 522px;
-	border-radius: 6px;
-	background-color: #f6f6f6;
-	box-shadow: 6px 6px 20px rgba(0.8, 1, 0.2, 0.1);
-
-	display: flex;
-	flex-direction: column;
-`;
-
-export const TopCardProject = styled.div`
-	display: flex;
-	height: 60%;
-`;
-
-export const BottomCardProject = styled.div`
-	display: flex;
-	flex-direction: column;
-	border-top: 1px solid #627070;
-	padding: 22px;
-	gap: 12px;
-`;
-
-export const ContainerTag = styled.div`
-	display: flex;
-	gap: 12px;
-`;
-
-export const Tag = styled.div`
-	display: flex;
-	padding: 8px 16px;
-	justify-content: center;
-	align-items: center;
-	background-color: #1a1a1a;
-	border-radius: 4px;
-	p {
-		color: #fafafa;
 	}
 `;
 

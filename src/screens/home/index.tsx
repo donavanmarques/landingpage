@@ -1,7 +1,9 @@
+import { useState } from "react";
+import { Fade, Slide } from "react-awesome-reveal";
 import { Navbar } from "../../componets/navbar";
 import { Button } from "../../componets/button";
 import { Footer } from "../../componets/footer";
-import { Fade, Slide } from "react-awesome-reveal";
+import { CardProjects } from "../../componets/cardProject";
 import Pdf from "../../assets/pdf.svg";
 import FirstPic from "../../assets/first-image.svg";
 import SecondPic from "../../assets/second-image.svg";
@@ -17,17 +19,17 @@ import Docker from "../../assets/docker.svg";
 import Gmail from "../../assets/gmail.svg";
 import Linkedin from "../../assets/linkedin.svg";
 import Github from "../../assets/github.svg";
+import Banana from "../../assets/banana-logo.svg";
+import Darwin from "../../assets/darwin-logo.svg";
+import Jugasa from "../../assets/jugasa-logo.svg";
 
 import {
 	AboutBar,
 	AboutText,
 	Body,
-	BottomCardProject,
 	BottomSixtContent,
 	BottomThirdContent,
-	CardProject,
 	Container,
-	ContainerTag,
 	FifthContent,
 	FirstContent,
 	FourthContent,
@@ -41,14 +43,50 @@ import {
 	SecondContent,
 	SixtContent,
 	SkillsCard,
-	Tag,
 	ThirdContent,
-	TopCardProject,
 	TopSixtContent,
 	TopThirdContent,
 } from "./styles";
 
+interface IProjects {
+	title: string;
+	description: string;
+	tags: string[];
+	image: string;
+	color1: string;
+	color2: string;
+}
+
 export function Home() {
+	const [projects] = useState<IProjects[]>([
+		{
+			title: "CLUBE JUGASA",
+			description:
+				"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+			tags: ["REACT", "REACT NATIVE", "TYPESCRIPT"],
+			image: Jugasa,
+			color1: "#0C3966",
+			color2: "#226AB2",
+		},
+		{
+			title: "BANANA HUB",
+			description:
+				"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+			tags: ["REACT", "REACT NATIVE", "TYPESCRIPT"],
+			image: Banana,
+			color1: "#2C334F",
+			color2: "#3B53B5",
+		},
+		{
+			title: "DARWIN SAÚDE",
+			description:
+				"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+			tags: ["REACT", "REACT NATIVE", "TYPESCRIPT"],
+			image: Darwin,
+			color1: "#0C918B",
+			color2: "#03A775",
+		},
+	]);
 	return (
 		<Container>
 			<Navbar />
@@ -84,11 +122,9 @@ export function Home() {
 						<AboutBar />
 						<AboutText>
 							<p className="p2">
-								Embora desempenhe atualmente o papel de Analista, não pretendo me
-								distanciar do código. Meus objetivos profissionais direcionam-se à busca
-								de especialização na área de análise de sistemas, ao mesmo tempo em que
-								almejo desenvolver uma base sólida de experiência no desenvolvimento de
-								software.
+								Meus objetivos profissionais direcionam-se à busca de especialização na
+								área de análise de sistemas, ao mesmo tempo em que almejo desenvolver
+								uma base sólida de experiência no desenvolvimento de software.
 							</p>
 						</AboutText>
 					</SecondContent>
@@ -98,80 +134,26 @@ export function Home() {
 						<h4>Projetos</h4>
 					</TopThirdContent>
 					<Projects>
-						<Fade>
-							<CardProject className="card">
-								<TopCardProject></TopCardProject>
-								<BottomCardProject>
-									<p className="t2">BANANA HUB</p>
-									<ContainerTag>
-										<Tag>
-											<p className="t1">JAVASCRIPT</p>
-										</Tag>
-										<Tag>
-											<p className="t1">JAVASCRIPT</p>
-										</Tag>
-										<Tag>
-											<p className="t1">JAVASCRIPT</p>
-										</Tag>
-									</ContainerTag>
-									<p className="p1">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
-										provident reiciendis, quia ipsa iure qui magnam labore voluptates.
-										Commodi voluptatibus eius nihil hic molestiae velit esse odit harum
-										rem fugit!
-									</p>
-								</BottomCardProject>
-							</CardProject>
-							<CardProject className="card">
-								<TopCardProject></TopCardProject>
-								<BottomCardProject>
-									<p className="t2">BANANA HUB</p>
-									<ContainerTag>
-										<Tag>
-											<p className="t1">JAVASCRIPT</p>
-										</Tag>
-										<Tag>
-											<p className="t1">JAVASCRIPT</p>
-										</Tag>
-										<Tag>
-											<p className="t1">JAVASCRIPT</p>
-										</Tag>
-									</ContainerTag>
-									<p className="p1">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
-										provident reiciendis, quia ipsa iure qui magnam labore voluptates.
-										Commodi voluptatibus eius nihil hic molestiae velit esse odit harum
-										rem fugit!
-									</p>
-								</BottomCardProject>
-							</CardProject>
-							<CardProject className="card">
-								<TopCardProject></TopCardProject>
-								<BottomCardProject>
-									<p className="t2">BANANA HUB</p>
-									<ContainerTag>
-										<Tag>
-											<p className="t1">JAVASCRIPT</p>
-										</Tag>
-										<Tag>
-											<p className="t1">JAVASCRIPT</p>
-										</Tag>
-										<Tag>
-											<p className="t1">JAVASCRIPT</p>
-										</Tag>
-									</ContainerTag>
-									<p className="p1">
-										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus
-										provident reiciendis, quia ipsa iure qui magnam labore voluptates.
-										Commodi voluptatibus eius nihil hic molestiae velit esse odit harum
-										rem fugit!
-									</p>
-								</BottomCardProject>
-							</CardProject>
-						</Fade>
+						{projects.map((element: IProjects) => {
+							return (
+								<CardProjects
+									color1={element?.color1}
+									color2={element?.color2}
+									image={element.image}
+									description={element.description}
+									title={element.title}
+									tags={element.tags}
+								/>
+							);
+						})}
 					</Projects>
 					<BottomThirdContent>
-						<Button textColor="#fff" color="#FFB800" text="Todos os projetos" />
+						<Button
+							textColor="#fff"
+							color="#FFB800"
+							text="Todos os projetos"
+							link="/projects"
+						/>
 					</BottomThirdContent>
 				</ThirdContent>
 				<FourthContent>
