@@ -316,6 +316,11 @@ export const MidSixtContent = styled.div`
 	display: flex;
 	margin-top: 42px;
 	gap: 48px;
+
+	p:hover {
+		cursor: pointer;
+		opacity: 0.7;
+	}
 `;
 
 export const BottomSixtContent = styled.div``;

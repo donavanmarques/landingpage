@@ -52,14 +52,16 @@ export const GradientBottom = styled.div`
 	);
 `;
 
-export const ContainerFooter = styled.div`
+export const ContainerFooter = styled.footer`
 	position: relative;
 	padding-top: 80px;
+	bottom: 0;
 	border-top: 2px solid #1817171d;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
+	max-height: 400px;
 `;
 
 export const ContentFooter = styled.div`

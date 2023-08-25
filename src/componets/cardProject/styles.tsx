@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CardProject = styled.div`
-	width: 422px;
+	width: 390px;
 	height: 522px;
 	border-radius: 6px;
 	background-color: #f6f6f6;
@@ -40,7 +40,6 @@ export const TopCardProject = styled.div<TopCardProjectProps>`
 export const BottomCardProject = styled.div`
 	display: flex;
 	flex-direction: column;
-	/* border-top: 1px solid #627070; */
 	padding: 22px;
 	gap: 12px;
 `;

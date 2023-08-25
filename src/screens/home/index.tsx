@@ -9,13 +9,16 @@ import FirstPic from "../../assets/first-image.svg";
 import SecondPic from "../../assets/second-image.svg";
 import JavaScript from "../../assets/javascript.svg";
 import TypeScript from "../../assets/typescript.svg";
-import Mongo from "../../assets/mongodb.svg";
+import Next from "../../assets/next-logo.svg";
+import Git from "../../assets/git.svg";
+import Figma from "../../assets/figma-logo.svg";
+// import Mongo from "../../assets/mongodb.svg";
 import React from "../../assets/reactjs.svg";
 import Native from "../../assets/reactnative.svg";
 import Styled from "../../assets/styled.svg";
-import Jest from "../../assets/jest.svg";
+// import Jest from "../../assets/jest.svg";
 import Postgres from "../../assets/postgrest.svg";
-import Docker from "../../assets/docker.svg";
+// import Docker from "../../assets/docker.svg";
 import Gmail from "../../assets/gmail.svg";
 import Linkedin from "../../assets/linkedin.svg";
 import Github from "../../assets/github.svg";
@@ -47,6 +50,7 @@ import {
 	TopSixtContent,
 	TopThirdContent,
 } from "./styles";
+import { useNavigate } from "react-router-dom";
 
 interface IProjects {
 	title: string;
@@ -58,6 +62,7 @@ interface IProjects {
 }
 
 export function Home() {
+	const navigate = useNavigate();
 	const [projects] = useState<IProjects[]>([
 		{
 			title: "CLUBE JUGASA",
@@ -163,13 +168,16 @@ export function Home() {
 					<SkillsCard>
 						<img className="vibrate-1" src={JavaScript} alt="" />
 						<img className="vibrate-1" src={TypeScript} alt="" />
-						<img className="vibrate-1" src={Mongo} alt="" />
+						{/* <img className="vibrate-1" src={Mongo} alt="" /> */}
 						<img className="vibrate-1" src={React} alt="" />
 						<img className="vibrate-1" src={Native} alt="" />
-						<img className="vibrate-1" src={Jest} alt="" />
+						{/* <img className="vibrate-1" src={Jest} alt="" /> */}
 						<img className="vibrate-1" src={Postgres} alt="" />
-						<img className="vibrate-1" src={Docker} alt="" />
+						{/* <img className="vibrate-1" src={Docker} alt="" /> */}
 						<img className="vibrate-1" src={Styled} alt="" />
+						<img className="vibrate-1" src={Next} alt="" />
+						<img className="vibrate-1" src={Git} alt="" />
+						<img className="vibrate-1" src={Figma} alt="" />
 					</SkillsCard>
 				</FourthContent>
 				<FifthContent>
@@ -200,8 +208,22 @@ export function Home() {
 							<img src={Github} alt="" />
 						</TopSixtContent>
 						<MidSixtContent>
-							<p className="p2">Projetos</p>
-							<p className="p2">Contato</p>
+							<p
+								onClick={() => {
+									navigate("/projects");
+								}}
+								className="p2"
+							>
+								Projetos
+							</p>
+							<p
+								onClick={() => {
+									navigate("/contact");
+								}}
+								className="p2"
+							>
+								Contato
+							</p>
 						</MidSixtContent>
 						<BottomSixtContent></BottomSixtContent>
 					</SixtContent>
