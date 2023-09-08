@@ -4,6 +4,7 @@ import { Navbar } from "../../componets/navbar";
 import { Button } from "../../componets/button";
 import { Footer } from "../../componets/footer";
 import { CardProjects } from "../../componets/cardProject";
+import { useNavigate } from "react-router-dom";
 import Pdf from "../../assets/pdf.svg";
 import FirstPic from "../../assets/first-image.svg";
 import SecondPic from "../../assets/second-image.svg";
@@ -26,31 +27,7 @@ import Banana from "../../assets/banana-logo.svg";
 import Darwin from "../../assets/darwin-logo.svg";
 import Jugasa from "../../assets/jugasa-logo.svg";
 
-import {
-	AboutBar,
-	AboutText,
-	Body,
-	BottomSixtContent,
-	BottomThirdContent,
-	Container,
-	FifthContent,
-	FirstContent,
-	FourthContent,
-	FourthContentTop,
-	LeftSideFifthContent,
-	LeftSidefirstContent,
-	MidSixtContent,
-	Projects,
-	RightSideFifthContent,
-	RightSidefirstContent,
-	SecondContent,
-	SixtContent,
-	SkillsCard,
-	ThirdContent,
-	TopSixtContent,
-	TopThirdContent,
-} from "./styles";
-import { useNavigate } from "react-router-dom";
+import * as Style from "./styles";
 
 interface IProjects {
 	title: string;
@@ -93,12 +70,12 @@ export function Home() {
 		},
 	]);
 	return (
-		<Container>
+		<Style.Container>
 			<Navbar />
-			<Body>
-				<FirstContent>
+			<Style.Body>
+				<Style.FirstContent>
 					<Fade>
-						<LeftSidefirstContent>
+						<Style.LeftSidefirstContent>
 							<h1>
 								<span>Sou</span> Donavan,
 							</h1>
@@ -115,30 +92,30 @@ export function Home() {
 								color="#F3F3F3"
 								text="Entrar em contato"
 							/>
-						</LeftSidefirstContent>
-						<RightSidefirstContent>
+						</Style.LeftSidefirstContent>
+						<Style.RightSidefirstContent>
 							<img src={FirstPic} alt="" />
-						</RightSidefirstContent>
+						</Style.RightSidefirstContent>
 					</Fade>
-				</FirstContent>
+				</Style.FirstContent>
 				<Fade>
-					<SecondContent>
+					<Style.SecondContent>
 						<img className="jello-horizontal" src={Pdf} alt="" />
-						<AboutBar />
-						<AboutText>
+						<Style.AboutBar />
+						<Style.AboutText>
 							<p className="p2">
 								Meus objetivos profissionais direcionam-se à busca de especialização na
 								área de análise de sistemas, ao mesmo tempo em que almejo desenvolver
 								uma base sólida de experiência no desenvolvimento de software.
 							</p>
-						</AboutText>
-					</SecondContent>
+						</Style.AboutText>
+					</Style.SecondContent>
 				</Fade>
-				<ThirdContent>
-					<TopThirdContent>
+				<Style.ThirdContent>
+					<Style.TopThirdContent>
 						<h4>Projetos</h4>
-					</TopThirdContent>
-					<Projects>
+					</Style.TopThirdContent>
+					<Style.Projects>
 						{projects.map((element: IProjects) => {
 							return (
 								<CardProjects
@@ -151,21 +128,21 @@ export function Home() {
 								/>
 							);
 						})}
-					</Projects>
-					<BottomThirdContent>
+					</Style.Projects>
+					<Style.BottomThirdContent>
 						<Button
 							textColor="#fff"
 							color="#FFB800"
 							text="Todos os projetos"
 							link="/projects"
 						/>
-					</BottomThirdContent>
-				</ThirdContent>
-				<FourthContent>
-					<FourthContentTop>
+					</Style.BottomThirdContent>
+				</Style.ThirdContent>
+				<Style.FourthContent>
+					<Style.FourthContentTop>
 						<h4>Skills</h4>
-					</FourthContentTop>
-					<SkillsCard>
+					</Style.FourthContentTop>
+					<Style.SkillsCard>
 						<img className="vibrate-1" src={JavaScript} alt="" />
 						<img className="vibrate-1" src={TypeScript} alt="" />
 						{/* <img className="vibrate-1" src={Mongo} alt="" /> */}
@@ -178,11 +155,11 @@ export function Home() {
 						<img className="vibrate-1" src={Next} alt="" />
 						<img className="vibrate-1" src={Git} alt="" />
 						<img className="vibrate-1" src={Figma} alt="" />
-					</SkillsCard>
-				</FourthContent>
-				<FifthContent>
+					</Style.SkillsCard>
+				</Style.FourthContent>
+				<Style.FifthContent>
 					<Slide>
-						<LeftSideFifthContent>
+						<Style.LeftSideFifthContent>
 							<h2>Vamos trabalhar juntos</h2>
 							<p className="p3">
 								Deseja discutir a oportunidade de desenvolver algo legal? Eu estou
@@ -194,20 +171,20 @@ export function Home() {
 								text="Entrar em contato"
 								textColor="#ffff"
 							/>
-						</LeftSideFifthContent>
-						<RightSideFifthContent>
+						</Style.LeftSideFifthContent>
+						<Style.RightSideFifthContent>
 							<img src={SecondPic} alt="" />
-						</RightSideFifthContent>
+						</Style.RightSideFifthContent>
 					</Slide>
-				</FifthContent>
+				</Style.FifthContent>
 				<Fade>
-					<SixtContent>
-						<TopSixtContent>
+					<Style.SixtContent>
+						<Style.TopSixtContent>
 							<img src={Gmail} alt="" />
 							<img src={Linkedin} alt="" />
 							<img src={Github} alt="" />
-						</TopSixtContent>
-						<MidSixtContent>
+						</Style.TopSixtContent>
+						<Style.MidSixtContent>
 							<p
 								onClick={() => {
 									navigate("/projects");
@@ -224,12 +201,12 @@ export function Home() {
 							>
 								Contato
 							</p>
-						</MidSixtContent>
-						<BottomSixtContent></BottomSixtContent>
-					</SixtContent>
+						</Style.MidSixtContent>
+						<Style.BottomSixtContent></Style.BottomSixtContent>
+					</Style.SixtContent>
 				</Fade>
-			</Body>
+			</Style.Body>
 			<Footer />
-		</Container>
+		</Style.Container>
 	);
 }

@@ -2,7 +2,6 @@ import { useState } from "react";
 import { CardProjects } from "../../componets/cardProject";
 import { Footer } from "../../componets/footer";
 import { Navbar } from "../../componets/navbar";
-import { Body, Container, ProjectsDiv, TitleProjects } from "./styles";
 
 import Banana from "../../assets/banana-logo.svg";
 import Darwin from "../../assets/darwin-logo.svg";
@@ -12,6 +11,8 @@ import Triangulo from "../../assets/triangulo-logo.svg";
 import Jugasa from "../../assets/jugasa-logo.svg";
 import Drin from "../../assets/drin-logo.svg";
 import Centercamp from "../../assets/centercamp-logo.svg";
+
+import * as Style from "./styles";
 
 interface IProjects {
 	title: string;
@@ -99,15 +100,15 @@ export function Projects() {
 		},
 	]);
 	return (
-		<Container>
+		<Style.Container>
 			<Navbar />
-			<Body>
-				<TitleProjects>
+			<Style.Body>
+				<Style.TitleProjects>
 					<h1>Projetos</h1>
 					<p className="p3">Projetos em que já trabalhei</p>
-				</TitleProjects>
+				</Style.TitleProjects>
 
-				<ProjectsDiv>
+				<Style.ProjectsDiv>
 					{projects.map((element) => {
 						return (
 							<CardProjects
@@ -120,10 +121,10 @@ export function Projects() {
 							/>
 						);
 					})}
-				</ProjectsDiv>
-			</Body>
+				</Style.ProjectsDiv>
+			</Style.Body>
 
 			<Footer />
-		</Container>
+		</Style.Container>
 	);
 }
