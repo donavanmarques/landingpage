@@ -37,7 +37,7 @@ export function Contact() {
 		resolver: zodResolver(contactSchema),
 	});
 
-	async function teste(data: IContactData) {
+	async function sendEmail(data: IContactData) {
 		const obj = {
 			email: data.email,
 			name: data.name,
@@ -46,8 +46,9 @@ export function Contact() {
 		};
 
 		try {
-			await api.post(`/api/v1/users/open`, obj).then((res) => {
+			await api.post(`/enviar_formulario`, obj).then((res) => {
 				console.log(res.data);
+				alert("e-mail enviado");
 			});
 		} catch (error) {
 			console.log(error);
@@ -67,7 +68,7 @@ export function Contact() {
 				</Style.FirstContent>
 
 				<Style.SecondContent>
-					<Style.CardEmail onSubmit={handleSubmit(teste)}>
+					<Style.CardEmail onSubmit={handleSubmit(sendEmail)}>
 						<Fade>
 							<Style.CardTitle>
 								<p className="t2">Novo e-mail</p>
@@ -86,7 +87,7 @@ export function Contact() {
 									<p className="t2">Nome:</p>
 									<input
 										placeholder="Insira seu nome"
-										type="email"
+										type="text"
 										{...register("name")}
 									/>
 								</Style.CardRow>
