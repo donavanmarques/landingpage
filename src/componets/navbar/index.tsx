@@ -39,14 +39,7 @@ export function Navbar() {
 					>
 						Projetos
 					</p>
-					{/* <p
-            className="p2"
-            onClick={() => {
-              navigate("/notes");
-            }}
-          >
-            Artigos
-          </p> */}
+
 					<p
 						className="p2"
 						onClick={() => {
@@ -57,9 +50,16 @@ export function Navbar() {
 					</p>
 				</LeftSide>
 				<RightSide>
-					<img className="icon" src={Linkedin} alt="" />
+					<a
+						target="_blank"
+						href="https://www.linkedin.com/in/donavan-marques-008032163/"
+					>
+						<img className="icon" src={Linkedin} alt="" />
+					</a>
 					<img src={Divider} alt="" />
-					<img className="icon" src={Github} alt="" />
+					<a target="_blank" href="https://github.com/donavanmarques">
+						<img className="icon" src={Github} alt="" />
+					</a>
 					{/* <img className="icon" src={Theme} alt="" /> */}
 				</RightSide>
 			</ContentNav>

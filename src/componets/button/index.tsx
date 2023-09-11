@@ -1,3 +1,4 @@
+import { SyncLoader } from "react-spinners";
 import { BodyButtom } from "./styles";
 import { useNavigate } from "react-router-dom";
 
@@ -6,6 +7,7 @@ interface Iprops {
 	color: string;
 	textColor: string;
 	link?: string;
+	loading?: boolean;
 }
 
 export function Button(Props: Iprops) {
@@ -18,7 +20,7 @@ export function Button(Props: Iprops) {
 			style={{ backgroundColor: Props.color }}
 		>
 			<p style={{ color: Props.textColor }} className="p2">
-				{Props.text}
+				{Props.loading ? <SyncLoader color="#ffffff" /> : Props.text}
 			</p>
 		</BodyButtom>
 	);

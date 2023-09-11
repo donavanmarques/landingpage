@@ -5,6 +5,7 @@ import { Button } from "../../componets/button";
 import { Footer } from "../../componets/footer";
 import { CardProjects } from "../../componets/cardProject";
 import { useNavigate } from "react-router-dom";
+
 import Pdf from "../../assets/pdf.svg";
 import FirstPic from "../../assets/first-image.svg";
 import SecondPic from "../../assets/second-image.svg";
@@ -13,19 +14,18 @@ import TypeScript from "../../assets/typescript.svg";
 import Next from "../../assets/next-logo.svg";
 import Git from "../../assets/git.svg";
 import Figma from "../../assets/figma-logo.svg";
-// import Mongo from "../../assets/mongodb.svg";
 import React from "../../assets/reactjs.svg";
 import Native from "../../assets/reactnative.svg";
 import Styled from "../../assets/styled.svg";
-// import Jest from "../../assets/jest.svg";
 import Postgres from "../../assets/postgrest.svg";
-// import Docker from "../../assets/docker.svg";
 import Gmail from "../../assets/gmail.svg";
 import Linkedin from "../../assets/linkedin.svg";
 import Github from "../../assets/github.svg";
 import Banana from "../../assets/banana-logo.svg";
 import Darwin from "../../assets/darwin-logo.svg";
 import Jugasa from "../../assets/jugasa-logo.svg";
+
+import Cv from "../../assets/cv.pdf";
 
 import * as Style from "./styles";
 
@@ -100,7 +100,9 @@ export function Home() {
 				</Style.FirstContent>
 				<Fade>
 					<Style.SecondContent>
-						<img className="jello-horizontal" src={Pdf} alt="" />
+						<a href={Cv} target="_blank">
+							<img className="jello-horizontal" src={Pdf} alt="" />
+						</a>
 						<Style.AboutBar />
 						<Style.AboutText>
 							<p className="p2">
@@ -145,12 +147,9 @@ export function Home() {
 					<Style.SkillsCard>
 						<img className="vibrate-1" src={JavaScript} alt="" />
 						<img className="vibrate-1" src={TypeScript} alt="" />
-						{/* <img className="vibrate-1" src={Mongo} alt="" /> */}
 						<img className="vibrate-1" src={React} alt="" />
 						<img className="vibrate-1" src={Native} alt="" />
-						{/* <img className="vibrate-1" src={Jest} alt="" /> */}
 						<img className="vibrate-1" src={Postgres} alt="" />
-						{/* <img className="vibrate-1" src={Docker} alt="" /> */}
 						<img className="vibrate-1" src={Styled} alt="" />
 						<img className="vibrate-1" src={Next} alt="" />
 						<img className="vibrate-1" src={Git} alt="" />

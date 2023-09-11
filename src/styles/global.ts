@@ -19,6 +19,21 @@ export default createGlobalStyle`
     text-decoration: none;
   } 
 
+  input:focus{
+    background-color: #f6f6f6;
+  }
+
+  input:disabled {
+  background-color: #f2f2f2; /* Cor de fundo */
+  color: #999; /* Cor do texto */
+  cursor: not-allowed; /* Cursor do mouse */
+}
+
+textarea:disabled {
+  background-color: #f2f2f2; /* Cor de fundo */
+  color: #999; /* Cor do texto */
+  cursor: not-allowed; /* Cursor do mouse */
+}
   
 
 

@@ -114,3 +114,19 @@ export const ThirdContent = styled.div`
 		transform: scale(1.4);
 	}
 `;
+
+export const SentEmail = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+`;
+
+export const SentEmailRight = styled.div`
+	display: flex;
+`;
+
+export const SentEmailLeft = styled.div`
+	display: flex;
+	flex-direction: column;
+	max-width: 500px;
+`;
