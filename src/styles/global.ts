@@ -34,11 +34,16 @@ textarea:disabled {
   color: #999; /* Cor do texto */
   cursor: not-allowed; /* Cursor do mouse */
 }
-  
 
+
+  
+a {
+  color:#0D0D0D;
+}
 
 
   h1 {
+    
     font-size: 80px;
     font-weight: 800
   }

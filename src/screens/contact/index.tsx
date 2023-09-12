@@ -6,6 +6,7 @@ import { Footer } from "../../componets/footer";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 import api from "../../services/api";
 
 import Discord from "../../assets/discord-contact.svg";
@@ -53,10 +54,14 @@ export function Contact() {
 		try {
 			await api.post(`/enviar_formulario`, obj).then((res) => {
 				console.log(res.data);
+				toast.success("E-mail enviado com sucesso!");
 				setLoading(false);
 				setEmailSent(true);
 			});
 		} catch (error) {
+			toast.error(
+				"Estamos tendo problemas, por favor tente novamente mais tarde."
+			);
 			setLoading(false);
 			console.log(error);
 		}

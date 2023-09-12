@@ -44,7 +44,7 @@ export function Home() {
 		{
 			title: "CLUBE JUGASA",
 			description:
-				"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+				"Programa de pontos desenvolvido no modelo mobile, conta com integrações com o ERP para a quantificação de pontos, acompanhamento de serviços, e outras funcionalidades oferecidas no aplicativo.",
 			tags: ["REACT", "REACT NATIVE", "TYPESCRIPT"],
 			image: Jugasa,
 			color1: "#0C3966",
@@ -53,7 +53,7 @@ export function Home() {
 		{
 			title: "BANANA HUB",
 			description:
-				"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+				"Hub de gestão multicontas para vendedores do mercado livre. Conta com recursos de notificações, perguntas, reclamações, mensagens, análise de concorrentes, criação de anúncios e etc.",
 			tags: ["REACT", "REACT NATIVE", "TYPESCRIPT"],
 			image: Banana,
 			color1: "#2C334F",
@@ -62,7 +62,7 @@ export function Home() {
 		{
 			title: "DARWIN SAÚDE",
 			description:
-				"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+				"Software para clínicas e consultórios com base integrada, conta com agenda inteligente, prontuário eletrônico, prescrições, resultados de exames, evoluções e anamneses etc.",
 			tags: ["REACT", "REACT NATIVE", "TYPESCRIPT"],
 			image: Darwin,
 			color1: "#0C918B",

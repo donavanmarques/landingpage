@@ -42,6 +42,7 @@ export const BottomCardProject = styled.div`
 	flex-direction: column;
 	padding: 22px;
 	gap: 12px;
+	height: 40%;
 `;
 
 export const ContainerTag = styled.div`

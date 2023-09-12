@@ -26,18 +26,39 @@ export function Footer() {
 					<RightSide>
 						<Links>
 							<p className="t2">Links</p>
-							<p className="p2">About</p>
-							<p className="p2">Work</p>
-							<p className="p2">Tech Stack</p>
-							<p className="p2">Contact</p>
+							<a href="http://localhost:5173/" className="p2">
+								Home
+							</a>
+							<a href="http://localhost:5173/projects" className="p2">
+								Projetos
+							</a>
+							<a href="http://localhost:5173/contact" className="p2">
+								Contato
+							</a>
 						</Links>
 						<Links>
-							<p className="t2">Elsewhere</p>
-							<p className="p2">Email</p>
-							<p className="p2">LinkedIn</p>
-							<p className="p2">GitHub</p>
-							<p className="p2">Twitter</p>
-							<p className="p2">Discord</p>
+							<p className="t2">Outros lugares</p>
+							<a
+								href="https://www.linkedin.com/in/donavan-marques-008032163/"
+								target="_blank"
+								className="p2"
+							>
+								LinkedIn
+							</a>
+							<a
+								href="https://github.com/donavanmarques"
+								target="_blank"
+								className="p2"
+							>
+								Github
+							</a>
+							<a
+								href="https://www.instagram.com/donavanmarques/"
+								target="_blank"
+								className="p2"
+							>
+								Instagram
+							</a>
 						</Links>
 					</RightSide>
 				</ContentFooter>

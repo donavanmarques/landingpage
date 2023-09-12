@@ -11,6 +11,7 @@ import Triangulo from "../../assets/triangulo-logo.svg";
 import Jugasa from "../../assets/jugasa-logo.svg";
 import Drin from "../../assets/drin-logo.svg";
 import Centercamp from "../../assets/centercamp-logo.svg";
+import Livros from "../../assets/livros-logo.svg";
 
 import * as Style from "./styles";
 
@@ -38,7 +39,7 @@ export function Projects() {
 			title: "SUL ÓXIDOS",
 			description:
 				"O projeto engloba uma plataforma de gestão laboratorial interna, configurações de ensaios e equações laboratoriais, controle de estoque, apontamentos de produção e controle de expedição.",
-			tags: ["REACT", "REACT NATIVE", "TYPESCRIPT"],
+			tags: ["REACT", "TYPESCRIPT"],
 			image: SulOxidos,
 			color1: "#fff",
 			color2: "#fff",
@@ -46,7 +47,7 @@ export function Projects() {
 		{
 			title: "IMBRAFORTE",
 			description:
-				"Aplicação para as soluções de IOT dos equipamentos Imbraforte,conta com gestão de planos, integração com aparelhos Alexa.",
+				"Aplicação de gestão para soluções IOT dos dispositivos de segurança Imbraforte. Conta com recursos de monitoramento e controle para os usuários através de um app.",
 			tags: ["REACT", "REACT NATIVE", "TYPESCRIPT"],
 			image: Imbraforte,
 			color1: "#FEB400",
@@ -64,7 +65,7 @@ export function Projects() {
 		{
 			title: "BANANA HUB",
 			description:
-				"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+				"Hub de gestão multicontas para vendedores do mercado livre. Conta com recursos de notificações, perguntas, reclamações, mensagens, análise de concorrentes, criação de anúncios e etc.",
 			tags: ["REACT", "REACT NATIVE", "TYPESCRIPT"],
 			image: Banana,
 			color1: "#2C334F",
@@ -73,8 +74,8 @@ export function Projects() {
 		{
 			title: "CENTERCAMP",
 			description:
-				"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-			tags: ["REACT", "REACT NATIVE", "TYPESCRIPT"],
+				"Plataforma de e-commerce para a venda de cursos digitais. Conta com acesso aos cursos adquiridos em formato de vídeo ou pdf, realização de avaliações, geração de certificado e etc.",
+			tags: ["REACT", "TYPESCRIPT"],
 			image: Centercamp,
 			color1: "#fff",
 			color2: "#fff",
@@ -84,7 +85,7 @@ export function Projects() {
 			title: "VIGILANCIA TRIÂNGULO",
 			description:
 				"Aplicação mobile para realização de rondas, check-in de pontos de fiscalização e apontamentos de inconsistências. Conta também com uma plataforma web destinada a gestão e monitoramento de rondas.",
-			tags: ["REACT", "REACT NATIVE", "TYPESCRIPT"],
+			tags: ["REACT NATIVE", "TYPESCRIPT"],
 			image: Triangulo,
 			color1: "#FFCA51",
 			color2: "#FAD37B",
@@ -92,11 +93,21 @@ export function Projects() {
 
 		{
 			title: "DRIN ACADEMY",
-			description: "Plataforma de educação para empresas",
-			tags: ["REACT", "REACT NATIVE", "TYPESCRIPT"],
+			description:
+				"Plataforma de educação e desenvolvimento de pessoas para empresas, conta com gestão de usuários e acesso aos cursos no formato de vídeo e pdf.",
+			tags: ["REACT", "TYPESCRIPT"],
 			image: Drin,
 			color1: "#FFF",
 			color2: "#FFF",
+		},
+		{
+			title: "LIVROS ESCOLARES",
+			description:
+				"Aplicativo de e-commerce integrado a plataforma Wake/tray. Conta com home, integração de banners, navegação por produtos, categorias, carrinho e etc.",
+			tags: ["REACT", "REACT NATIVE", "TYPESCRIPT"],
+			image: Livros,
+			color1: "#12141C",
+			color2: "#293c85",
 		},
 	]);
 	return (
