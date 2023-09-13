@@ -46,6 +46,8 @@ a {
     
     font-size: 80px;
     font-weight: 800
+ 
+
   }
 
   h2 {

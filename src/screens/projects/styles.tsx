@@ -15,6 +15,17 @@ export const Body = styled.div`
 	align-items: center;
 	width: 100%;
 	max-width: 1900px;
+
+	@media (max-width: 1263px) {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	@media (max-width: 600px) {
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-bottom: 40px;
+	}
 `;
 
 export const TitleProjects = styled.div`
@@ -22,6 +33,18 @@ export const TitleProjects = styled.div`
 	display: flex;
 	gap: 6px;
 	flex-direction: column;
+	margin-bottom: 22px;
+
+	@media (max-width: 1263px) {
+		margin-bottom: 40px;
+		h1 {
+			font-size: 60px;
+		}
+
+		.p3 {
+			font-size: 18px;
+		}
+	}
 `;
 
 export const ProjectsDiv = styled.div`
@@ -33,15 +56,17 @@ export const ProjectsDiv = styled.div`
 	width: 100%;
 	gap: 40px;
 	transition: ease-in-out 0.3s;
+	transform: scale(1.02);
 
 	.card {
+		opacity: 0.9;
 		transition: ease-in-out 0.3s;
 		transform: scale(1);
 	}
 
 	.card:hover {
-		cursor: pointer;
 		transition: ease-in-out 0.2s;
 		transform: scale(1.02);
+		opacity: 1;
 	}
 `;

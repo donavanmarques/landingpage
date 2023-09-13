@@ -16,12 +16,36 @@ export const Body = styled.div`
 	align-items: center;
 	width: 100%;
 	max-width: 1900px;
+
+	@media (max-width: 1263px) {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	@media (max-width: 600px) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 `;
 
 export const FirstContent = styled.div`
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+
+	@media (max-width: 1263px) {
+		h1 {
+			font-size: 60px;
+		}
+
+		.p3 {
+			font-size: 18px;
+		}
+
+		img {
+			display: none;
+		}
+	}
 `;
 
 export const LeftSidefirstContent = styled.div`
@@ -41,6 +65,7 @@ export const SecondContent = styled.div`
 	margin-top: 80px;
 	margin-bottom: 80px;
 	min-height: 120px;
+	height: 100%;
 	display: flex;
 	gap: 18px;
 	align-items: center;
@@ -118,13 +143,25 @@ export const SecondContent = styled.div`
 			transform: scale3d(1, 1, 1);
 		}
 	}
+
+	@media (max-width: 900px) {
+		gap: 6px;
+		.p2 {
+			font-size: 14px;
+		}
+	}
 `;
 
 export const AboutBar = styled.div`
+	display: flex;
 	width: 4px;
 	border-radius: 2px;
 	height: 80px;
 	background-color: #e93f3f;
+
+	@media (max-width: 900px) {
+		width: 6px;
+	}
 `;
 
 export const AboutText = styled.div`
@@ -162,14 +199,21 @@ export const Projects = styled.div`
 	transform: scale(1.05);
 
 	.card {
+		opacity: 0.9;
 		transition: ease-in-out 0.3s;
 		transform: scale(1);
 	}
 
 	.card:hover {
-		cursor: pointer;
 		transition: ease-in-out 0.2s;
 		transform: scale(1.02);
+		opacity: 1;
+	}
+
+	@media (max-width: 1263px) {
+		margin-top: 40px;
+		flex-direction: column;
+		align-items: center;
 	}
 `;
 
@@ -251,7 +295,6 @@ export const SkillsCard = styled.div`
 			transform: translate(0);
 		}
 	}
-
 	@-webkit-keyframes flip-vertical-right {
 		0% {
 			-webkit-transform: rotateY(0);
@@ -272,6 +315,13 @@ export const SkillsCard = styled.div`
 			transform: rotateY(180deg);
 		}
 	}
+
+	@media (max-width: 900px) {
+		gap: 28px;
+		img {
+			width: 90px;
+		}
+	}
 `;
 
 export const FifthContent = styled.div`
@@ -280,6 +330,20 @@ export const FifthContent = styled.div`
 	align-items: center;
 	width: 100%;
 	margin-bottom: 120px;
+
+	@media (max-width: 1263px) {
+		h2 {
+			font-size: 36px;
+			margin-bottom: 12px;
+		}
+		.p3 {
+			font-size: 18px;
+		}
+		justify-content: center;
+		img {
+			display: none;
+		}
+	}
 `;
 
 export const LeftSideFifthContent = styled.div`
@@ -309,6 +373,10 @@ export const TopSixtContent = styled.div`
 
 	img {
 		cursor: pointer;
+	}
+
+	@media (max-width: 600px) {
+		gap: 32px;
 	}
 `;
 

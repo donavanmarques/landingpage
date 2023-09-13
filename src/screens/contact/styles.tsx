@@ -15,6 +15,16 @@ export const Body = styled.div`
 	align-items: center;
 	width: 100%;
 	max-width: 1900px;
+
+	@media (max-width: 1263px) {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	@media (max-width: 600px) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 `;
 
 export const FirstContent = styled.div`
@@ -23,6 +33,16 @@ export const FirstContent = styled.div`
 	width: 100%;
 	flex-direction: column;
 	padding-bottom: 40px;
+
+	@media (max-width: 1263px) {
+		h1 {
+			font-size: 60px;
+		}
+
+		.p3 {
+			font-size: 18px;
+		}
+	}
 `;
 
 export const SecondContent = styled.div`
@@ -47,6 +67,12 @@ export const CardEmail = styled.form`
 	span {
 		color: red;
 		font-size: 10px;
+	}
+
+	@media (max-width: 1263px) {
+		.t2 {
+			font-size: 16px;
+		}
 	}
 `;
 
@@ -79,7 +105,7 @@ export const CardRow = styled.div`
 	justify-content: flex-start;
 
 	input {
-		width: 50%;
+		width: 60%;
 		outline: none;
 		border: none;
 		background-color: #f6f6f6;
@@ -119,10 +145,30 @@ export const SentEmail = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	@media (max-width: 1263px) {
+		flex-direction: column;
+
+		h2 {
+			font-size: 36px;
+			margin-bottom: 12px;
+		}
+		.p3 {
+			font-size: 18px;
+		}
+
+		img {
+			width: 300px;
+		}
+	}
 `;
 
 export const SentEmailRight = styled.div`
 	display: flex;
+
+	@media (max-width: 1263px) {
+		margin-top: 20px;
+	}
 `;
 
 export const SentEmailLeft = styled.div`

@@ -74,13 +74,30 @@ export const ContentFooter = styled.div`
 	bottom: 0;
 	width: 100%;
 	height: 100%;
+
+	@media (max-width: 1020px) {
+		justify-content: center;
+		flex-direction: column-reverse;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 `;
 
-export const LeftSide = styled.div``;
+export const LeftSide = styled.div`
+	@media (max-width: 1020px) {
+		width: 100%;
+		margin-top: 22px;
+	}
+`;
 
 export const RightSide = styled.div`
 	display: flex;
 	gap: 120px;
+
+	@media (max-width: 1020px) {
+		justify-content: space-between;
+		width: 100%;
+	}
 `;
 
 export const Links = styled.div`

@@ -15,4 +15,14 @@ export const BodyButtom = styled.button`
 		opacity: 0.7;
 		transition: 0.25s;
 	}
+
+	@media (max-width: 900px) {
+		border-radius: 6px;
+		.p2 {
+			font-size: 14px;
+		}
+		p {
+			padding: 12px 18px;
+		}
+	}
 `;

@@ -52,10 +52,15 @@ export const GradientBottom = styled.div`
 		rgba(255, 255, 255, 2),
 		#ffffff
 	);
+
+	@media (max-width: 900px) {
+		display: none;
+	}
 `;
 
 export const ContentNav = styled.div`
 	top: 40px;
+	/* border: 1px solid #c529292b; */
 	border: 1px solid #ffffff2b;
 	position: absolute;
 	display: flex;
@@ -65,6 +70,14 @@ export const ContentNav = styled.div`
 	width: 60%;
 	background-color: #ffffff34;
 	border-radius: 12px;
+
+	@media (max-width: 900px) {
+		width: 80%;
+
+		.github {
+			display: none;
+		}
+	}
 
 	.bounce-top {
 		-webkit-animation: bounce-top 0.9s both;
@@ -188,6 +201,26 @@ export const LeftSide = styled.div`
 		opacity: 0.7;
 		transition: 0.25s;
 	}
+
+	@media (max-width: 900px) {
+		justify-content: flex-start;
+		p {
+			display: none;
+		}
+	}
+`;
+
+export const MobileMenu = styled.div`
+	display: none;
+	gap: 20px;
+
+	img {
+		width: 28px;
+	}
+
+	@media (max-width: 900px) {
+		display: flex;
+	}
 `;
 
 export const RightSide = styled.div`
@@ -200,5 +233,9 @@ export const RightSide = styled.div`
 		cursor: pointer;
 		opacity: 0.7;
 		transition: 0.25s;
+	}
+
+	@media (max-width: 900px) {
+		gap: 16px;
 	}
 `;

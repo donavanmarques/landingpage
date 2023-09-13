@@ -101,7 +101,7 @@ export function Contact() {
 										<p className="t2">E-mail:</p>
 										<input
 											disabled={loading ? true : false}
-											placeholder="Insira seu endereço de e-mail"
+											placeholder="Insira seu e-mail"
 											type="text"
 											{...register("email")}
 										/>
