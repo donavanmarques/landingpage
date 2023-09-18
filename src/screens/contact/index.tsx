@@ -52,7 +52,7 @@ export function Contact() {
 		};
 
 		try {
-			await api.post(`/enviar_formulario`, obj).then((res) => {
+			await api.post(`/sendmail`, obj).then((res) => {
 				console.log(res.data);
 				toast.success("E-mail enviado com sucesso!");
 				setLoading(false);
