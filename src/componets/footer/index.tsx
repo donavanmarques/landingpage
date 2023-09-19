@@ -26,13 +26,19 @@ export function Footer() {
 					<RightSide>
 						<Links>
 							<p className="t2">Links</p>
-							<a href="http://localhost:5173/" className="p2">
+							<a href="https://landingpage-donavanmarques.vercel.app/" className="p2">
 								Home
 							</a>
-							<a href="http://localhost:5173/projects" className="p2">
+							<a
+								href="https://landingpage-donavanmarques.vercel.app/projects"
+								className="p2"
+							>
 								Projetos
 							</a>
-							<a href="http://localhost:5173/contact" className="p2">
+							<a
+								href="https://landingpage-donavanmarques.vercel.app/contact"
+								className="p2"
+							>
 								Contato
 							</a>
 						</Links>
