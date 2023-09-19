@@ -7,7 +7,7 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
-import api from "../../services/api";
+import Api from "../../services/api";
 
 import Discord from "../../assets/discord-contact.svg";
 import Linkedin from "../../assets/linkedin-contact.svg";
@@ -52,7 +52,7 @@ export function Contact() {
 		};
 
 		try {
-			await api.post(`/sendmail`, obj).then((res) => {
+			await Api.post(`/sendmail`, obj).then((res) => {
 				console.log(res.data);
 				toast.success("E-mail enviado com sucesso!");
 				setLoading(false);
